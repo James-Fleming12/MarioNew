@@ -21,7 +21,7 @@ import java.awt.Graphics;
 		int x, y;
 
 		public character() {
-			img = getImage("/imgs/test.jpg"); //load the image for Tree
+			img = getImage("/imgs/Mario standing.png"); //load the image for Tree
 			tx = AffineTransform.getTranslateInstance(x, y);
 			init(x, y); 				//initialize the location of the image
 										//use your variables

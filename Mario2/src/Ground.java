@@ -22,7 +22,7 @@ import java.awt.Graphics;
 		//add location attributes
 		public Ground() {
 			x=0;
-			y=700;
+			y=450;
 			img = getImage("/imgs/marioground.png"); //load the image for Tree
 			tx = AffineTransform.getTranslateInstance(x, y);
 			init(x, y); 				//initialize the location of the image

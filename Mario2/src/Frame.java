@@ -15,11 +15,11 @@ import javax.swing.Timer;
 public class Frame extends JPanel implements KeyListener, ActionListener{
 	
 	character test =  new character();
-	Ground g = new Ground();
+	Ground gr = new Ground();
 	public void paint(Graphics g) {
 		super.paintComponent(g);
 		test.paint(g);
-		g.paint(g);
+		gr.paint(g);
 		
 		//collision is under paint because we want to check 
 		// multiple times per second ! not just a keypress
