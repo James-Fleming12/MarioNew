@@ -37,13 +37,16 @@ import java.awt.Graphics;
 			//these are the 2 lines of code needed draw an image on the screen
 			Graphics2D g2 = (Graphics2D) g;
 			g2.drawImage(img, tx, null);
-			
+			if(y<280) {
+				y+=5;
+			}
+			update();
 		}
 			
 			//update the picture variable location
 		private void update() {
 			tx.setToTranslation(x,y);
-			tx.scale(.10, .10);
+			tx.scale(0.5, 0.5);
 		}
 		
 		private void init(double a, double b) {

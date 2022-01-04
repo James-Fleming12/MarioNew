@@ -18,7 +18,8 @@ import java.awt.Graphics;
 	public class Ground {
 		private Image img; 	
 		private AffineTransform tx;
-		int x, y;
+		private int x, y;
+				private boolean groundFound; 
 		//add location attributes
 		public Ground() {
 			x=0;
@@ -27,6 +28,7 @@ import java.awt.Graphics;
 			tx = AffineTransform.getTranslateInstance(x, y);
 			init(x, y); 				//initialize the location of the image
 										//use your variables
+			groundFound = true;
 		}
 	
 		public void changePicture(String newFileName) {
@@ -62,4 +64,26 @@ import java.awt.Graphics;
 			}
 			return tempImage;
 		}
+		public void setFound(boolean set) {
+			groundFound = set; 
+		}
+		public boolean getFound() {
+			return groundFound; 
+		}
+		public int getX() {
+			return x;
+		}
+
+		public void setX(int x) {
+			this.x = x;
+		}
+
+		public int getY() {
+			return y;
+		}
+
+		public void setY(int y) {
+			this.y = y;
+		}
+
 	}	
